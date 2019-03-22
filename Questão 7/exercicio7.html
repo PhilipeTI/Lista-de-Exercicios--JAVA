@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    </head>
+       <meta charser="UTF-8">
+       <h1>Exercicio 7</h1>       
+       <script type="text/javascript">
+       		function Invnome(){
+				var plv=document.getElementById('s1').childNodes;
+				var invert=plv.length-1;
+				var aux;
+			
+				for(i=0;i<(plv.length/2);i++){
+					console.log(i);
+					aux=plv[i].value;
+					plv[i].value=plv[invert].value;
+					plv[invert].value=aux;
+					invert--;
+				}
+			}
+       
+       
+       </script>
+    <body>
+    	<h4>Digite seu nome</h4>
+		<div id='s1'>
+        	Nome 1 :<input type="text" name="nome1"/><br>
+            Nome 2 :<input type="text" name="nome2"/><br>
+            Nome 3 :<input type="text" name="nome3"/><br>
+            Nome 4 :<input type="text" name="nome4"/><br>
+            Nome 5 :<input type="text" name="nome5"/><br>
+           
+       	</div>
+        <input type="submit" value="salvar" onClick="Invnome()"/>
+	</body>
+</html> 
