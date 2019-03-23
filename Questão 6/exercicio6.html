@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    </head>
+       <meta charser="UTF-8">
+       <h1>Exercicio 6</h1>       
+       <script type="text/javascript">
+       		function Invnome(){
+				var plv=document.getElementById('p1').value;
+				 var invert=plv.length-1;
+				
+			
+				for(i=0;i<(plv.length/2);i++){
+					plv[i].charAt(i);
+					plv[invert].value=aux;
+					invert--; 
+                    
+                    
+                    if(plv[i]==plv[invert]){
+                    	window.alert('É palídromo!');
+                	} 
+                    else{
+                    window.alert('Não é palídromo!');
+                	}
+				}
+                
+			}
+       
+       
+       </script>
+    <body>
+    
+		<div id='s1'>
+        	Palavra <input id="p1" type="text" name="palavra1"/><br>          
+           
+       	</div>
+        <input type="submit" value="salvar" onClick="Invnome()"/>
+	</body>
+</html> 
